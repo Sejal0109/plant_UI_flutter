@@ -1,5 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:plant_app/screens/authentication/logIn.dart';
 
 import '../../../constants.dart';
 
@@ -65,7 +67,15 @@ class HeaderWithSearchBox extends StatelessWidget {
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                   const Spacer(),
-                  Image.asset("assests/icons/plant.png")
+                  GestureDetector(
+                      onTap: () async {
+                        await FirebaseAuth.instance.signOut();
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LogInPage()));
+                      },
+                      child: Icon(Icons.logout))
                 ],
               ),
             ),

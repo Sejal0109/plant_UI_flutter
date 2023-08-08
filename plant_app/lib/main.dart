@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/constants.dart';
-import 'package:plant_app/screens/home/components/home_screen.dart';
+import 'firebase_options.dart';
+import 'screens/authentication/logIn.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -20,7 +27,9 @@ class MyApp extends StatelessWidget {
         primaryColor: kPrimaryColor,
        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const HomeScreen(),
+      home: const
+      LogInPage(),
+      //  HomeScreen(),
     );
   }
 }

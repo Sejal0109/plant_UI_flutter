@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "86914973774",
+    "project_id": "plant-app-firebase",
+    "storage_bucket": "plant-app-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86914973774:android:7e2f4f0a850a6f5098031f",
+        "android_client_info": {
+          "package_name": "com.example.plant_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86914973774-tlm0hlcbg5l8jrb1ikfgrdt2u205s095.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAB6Ey-H7Yok8JNoawurys17JrjJWKfBRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86914973774-tlm0hlcbg5l8jrb1ikfgrdt2u205s095.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
